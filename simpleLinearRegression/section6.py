@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 # importing the dataset
 
-dataset = pd.read_csv('../Salary_Data.csv')
+dataset = pd.read_csv('Salary_Data.csv')
 x = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 1].values
 
@@ -30,7 +30,7 @@ accuracy = model.score(x_test, y_test)
 
 print("accuracy =", accuracy)
 
-
+pr
 # visualizing the Training set result
 
 plt.scatter(x_train, y_train, color='red')
